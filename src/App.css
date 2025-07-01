@@ -1,0 +1,79 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  /* Дополнительные настройки */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+:root {
+  --primary: #00f0ff;
+  --secondary: #0a192f;
+  --dark: #020c1b;
+  --light: #e6f1ff;
+  --teal: #64ffda;
+  --gray: #8892b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cyber', sans-serif;
+}
+
+.app-container {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.global-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/images/background.jpg') no-repeat center center;
+  background-size: 150% auto; /* Уменьшенное изображение */
+  z-index: -1;
+  filter: brightness(0.7);
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+/* Стили для всех карточек */
+.card {
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  border-radius: 5px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: rgba(100, 255, 218, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 240, 255, 0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+  
+  .global-background {
+    background-size: cover;
+  }
+}

@@ -1,0 +1,42 @@
+/* Глобальные стили */
+@font-face {
+  font-family: 'Cyber';
+  src: url('./assets/fonts/Cyber.woff2') format('woff2');
+}
+
+:root {
+  --primary: #00f0ff;
+  --secondary: #0a192f;
+  --dark: #020c1b;
+  --light: #e6f1ff;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cyber', sans-serif;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  overflow-x: hidden;
+}
+
+.app {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+/* Медиазапросы */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+.footer {
+  background-color: #020c1b;
+  color: #878faa;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.info h3 {
+  color: #2e6296;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.info p {
+  margin-bottom: 0.5rem;
+  color: #878faa;
+}
+.contacts h2{
+    margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.contacts p,
+.contacts a {
+  color: #878faa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.contacts a:hover {
+  color: #45a2ff;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
